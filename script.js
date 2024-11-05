@@ -1,4 +1,4 @@
-import information from "./information";
+import information from "./information.js";
 
 const chatbotMessages = document.getElementById("chatbot-messages");
 const userInput = document.getElementById("user-input");
@@ -39,3 +39,6 @@ function sendOnEnter(event) {
         sendMessage();
     }
 }
+
+window.sendMessage = sendMessage;
+window.sendOnEnter = sendOnEnter
