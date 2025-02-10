@@ -1,4 +1,4 @@
-import information from "static/information.js";
+import information from "/static/information.js";
 
 const chatbotMessages = document.getElementById("chatbot-messages");
 const userInput = document.getElementById("user-input");
