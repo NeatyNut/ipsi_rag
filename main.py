@@ -6,10 +6,10 @@ from fastapi.templating import Jinja2Templates
 app = FastAPI()
 
 # 정적 파일 제공
-app.mount("/static", StaticFiles(directory="app/static"), name="static")
+app.mount("/static", StaticFiles(directory="ipsi_rag/static"), name="static")
 
 # 템플릿 설정
-templates = Jinja2Templates(directory="app/templates")
+templates = Jinja2Templates(directory="ipsi_rag/templates")
 
 # 수정 필요
 @app.get("/", response_class=HTMLResponse)
