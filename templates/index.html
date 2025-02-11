@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot Interface</title>
     <link rel="stylesheet" href="/static/styles.css">
-    <script src="/static/script.js"></script>
-    <script src="/static/information.js"></script>
 </head>
 <body>
-    <div class="chatbot-container">
-
-        <div class="chatbot-header">
-            <h2>대입 전문 Chatbot</h2>
+    <div>
+        <div>
+            <h2>구글 api키</h2>
+            <input id="apikey" type="password">
         </div>
-        <div class="chatbot-messages" id="chatbot-messages"></div>
-        <div class="chatbot-input">
-            <input type="text" id="user-input" placeholder="메시지를 입력하세요..." onkeypress="sendOnEnter(event)">
-            <button onclick="sendMessage()">전송</button>
+
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h2>대입 전문 Chatbot</h2>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages"></div>
+            <div class="chatbot-input">
+                <input type="text" id="user-input" placeholder="메시지를 입력하세요..." onkeypress="sendOnEnter(event)">
+                <button onclick="sendMessage()">전송</button>
+            </div>
         </div>
     </div>
     
 </body>
+<script src="/static/script.js"></script>
 </html>
