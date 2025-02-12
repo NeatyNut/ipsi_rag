@@ -28,6 +28,7 @@ function sendMessage() {
     .then(data => {
         // 일단 data를 통해 컨텐츠가 해당 위치를 통해 들어오는 것을 확인했으나
         // https://learn.microsoft.com/en-us/microsoft-edge/web-platform/site-impacting-changes 사이트를 확인을 해서 처리할 것
+        // 상태관리인 것으로 보임
 
         var return_message = data.candidates[0].contents.parts[0].text;
         
